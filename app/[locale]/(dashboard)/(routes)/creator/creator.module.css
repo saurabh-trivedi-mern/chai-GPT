@@ -1,0 +1,168 @@
+.container{
+    height: 85.2vh;
+    font-family: "Sevillana", cursive;
+    background-color: #b4ded3;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    padding: 40px 140px;
+    position: relative;
+}
+
+.imgBox{
+    flex: 3;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    perspective: 500px;
+}
+
+.profile{
+    border-top: 3px solid #135D66;
+    border-left: 3px solid #135D66;
+    padding: 10px;
+    border-radius: 30px 50px 30px 50px ;
+    object-fit: cover;
+    box-shadow: 8px 8px 30px 4px rgba(0, 0, 0, 0.5);
+    transform: rotateY(10deg);
+}
+
+.textBox{
+    flex: 5;
+}
+
+.textBox>h1{
+    font-size: 35px;
+}
+
+.textBox>h2{
+    font-size: 30px;
+    color: rgb(255, 115, 0);
+}
+
+.textBox>h3{
+    font-size: 18px;
+}
+
+.floating{
+    position: absolute;
+    top: 100px ;
+    left: 450px;
+    padding: 150px 80px;
+    background-color: #16737fba;
+    border-radius: 4px 25px 25px 4px;
+}
+
+.socials{
+    display: flex;
+    gap: 20px;
+}
+
+.social{
+    scale: 1.2;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.social:hover{
+    scale: 1.3;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .wrapper{
+        max-width: 1024px;
+    }
+    .floating{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .wrapper{
+        max-width: 768px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        min-height: 150vh;
+    }
+    .wrapper{
+        display: flex;
+        position: relative;
+    }
+    .imgBox{
+        display: flex;
+        flex: 3;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    }
+    .textBox{
+        position: absolute;
+        left: 10px;
+        top: 350px;
+    }
+    /* .textBox>h3{
+        font-family: "Playfair Display", serif;
+    } */
+    .socials{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:640px){
+    .container{
+        max-height: max-content;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .imgBox{
+        display: flex;
+        flex: 3;
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+    .textBox{
+        position: absolute;
+        left: 10px;
+        top: 350px;
+        padding: 0px 20px;
+    }
+    .textBox>h1{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .textBox>h2{
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .textBox>h3{
+        font-size: 18px;
+        font-weight: 500;
+        text-align: justify;
+        /* font-family: "Playfair Display", serif; */
+    }
+    .socials{
+        justify-content: center;
+    }
+}

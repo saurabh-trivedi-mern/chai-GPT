@@ -1,0 +1,136 @@
+.container{
+    max-width: 1200px;
+    padding-top: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: platypi !important;
+}
+
+.heading{
+    font-size: 120px;
+    color: white;
+    display: flex;
+    text-shadow: 0 0 5px #b9b9b9, 0 0 5px #757575;
+}
+
+.heading > .image{
+    margin: 0%;
+    padding: 0%;
+}
+
+.tagline{
+    font-size: 45px;
+    color: white;
+    text-shadow: 0 0 3px #b9b9b9, 0 0 3cqmax #757575;
+}
+
+.login_signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0px 230px 0px 190px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+
+.button1{
+    margin-right: 20px;
+}
+
+.button1, .button2{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.5s all;
+    color: white;
+    background-color: #135D66;
+    box-shadow: 0 0 5px #b9b9b9, 0 0 5px #757575;
+}
+
+
+.button1:hover, .button2:hover{
+    background-color: #77B0AA;
+    color: black;
+}
+
+.enterBtn{
+    color: white;
+    background-color: #135D66;
+    transition: 0.5s all;
+    box-shadow: 0 0 5px #b9b9b9, 0 0 5px #757575;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.enterBtn:hover{
+    background-color: #77B0AA;
+    color: black;
+}
+
+.accountBtn{
+    color: white;
+    background-color: #135D66;
+    transition: 0.5s all;
+    box-shadow: 0 0 5px #b9b9b9, 0 0 5px #757575;
+    cursor: pointer;
+}
+
+.accountBtn:hover{
+    background-color: #77B0AA;
+}
+
+.accountBtn:hover > h1{
+    color: black;
+}
+
+.examples{
+    padding-bottom: 30px;
+}   
+
+.examples > div{
+    z-index: 1000;
+}
+
+
+@media screen and (max-width:640px){
+    .heading{
+        font-size: 50px;
+    }
+    .image{
+        height: 70px;
+        width: 70px;
+    }
+    .tagline{
+        font-size: 16px;
+    }
+    .login_signup{
+        padding: 0px;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .accountBtn{
+        padding: 5px 10px;
+    }
+    .enterBtn{
+        margin-right: 40px;
+    }
+    .examples>h1{
+        margin: 0px 15px 40px 15px;
+        padding: 15px 0px;
+        font-size: 20px;
+
+    }
+    .examplesDiv{
+       display: flex;
+       flex-direction: column;
+    }
+}

@@ -1,0 +1,41 @@
+.starImage{
+    position: absolute;
+    animation: twinkle 2s linear infinite;
+}
+
+.starImage1{
+    top : 100px;
+    left: 700px;
+}
+
+.starImage2{
+    top : 140px;
+    left: 750px;
+}
+
+.starImage3{
+    top : 400px;
+    left: 800px;
+}
+
+.starImage4{
+    top : 600px;
+    left: 500px;
+}
+
+.starImage5{
+    top : 300px;
+    left: 600px;
+}
+
+@keyframes twinkle {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
