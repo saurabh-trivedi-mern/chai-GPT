@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "./stars.module.css"
 import Image from 'next/image'
 
+//star background
+
 const Stars = () => {
   return (
     <div>
