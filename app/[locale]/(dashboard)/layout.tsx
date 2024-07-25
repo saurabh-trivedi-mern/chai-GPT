@@ -14,18 +14,6 @@ const DashboardLayout = (
                 <Navbar />
                 {children}
             </main>     
-
-
-
-            {/* <div className="hidden h-full md:flex md:w-72 md:flex-col sm:fixed overflow-y-scroll md:inset-y-0 z-[80]  text-white">
-                 <div className="h-full">
-                   <Sidebarr />
-                 </div>
-            </div>
-            <main className="md:pl-72">
-                <Navbar />
-                {children}
-            </main> */}
         </div>
      );
 }

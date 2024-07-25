@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { UserButton, auth } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
 import styles from "./landing.module.css"
 import Starfield from "@/components/stars";
 
