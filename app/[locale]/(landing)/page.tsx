@@ -1,4 +1,4 @@
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 // import { UserButton } from "@clerk/nextjs";
@@ -21,7 +21,7 @@ const LandingPage = () => {
           <h3 className={styles.tagline}>Imagine, Innovate & Ignite With Powers of AI</h3>
         </div> 
         <div className={styles.login_signup}>
-          {/* <div className={styles.buttons}>
+          <div className={styles.buttons}>
             <Link href="/en/sign-in">
               <Button className={styles.button1}>
                 Login
@@ -32,11 +32,11 @@ const LandingPage = () => {
                 Signup
               </Button>
             </Link>
-          </div> */}
-          {/* <div className={`${styles.accountBtn} flex text-center items-center px-3 py-1 rounded-3xl`}>
+          </div>
+          <div className={`${styles.accountBtn} flex text-center items-center px-3 py-1 rounded-3xl`}>
             <h1 className="text-xl text-white mr-2">Your Account :</h1> 
-            <UserButton afterSignOutUrl="/en" />
-          </div> */}
+            {/* <UserButton afterSignOutUrl="/en" /> */}
+          </div>
         </div>
           <div className="flex items-center justify-center pb-10"><Link href="/en/dashboard" className={`${styles.enterBtn} flex pl-3 mb-6 ml-8 rounded-3xl`}><h1 className="text-center text-white hover:text-black transition duration-500 text-3xl p-2">Enter The Web App</h1></Link></div>
        </div>
