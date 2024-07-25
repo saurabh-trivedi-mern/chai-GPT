@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { ClerkProvider } from '@clerk/nextjs'
+// import { ClerkProvider } from '@clerk/nextjs'
 import './globals.css'
 
 import { notFound } from "next/navigation";
@@ -41,13 +41,13 @@ export default async function LocaleLayout({
           messages={messages}
           timeZone="Europe/Berlin"
           now={new Date()}>
-              <ClerkProvider>
+              {/* <ClerkProvider> */}
               <html lang={locale}>
                 <body suppressHydrationWarning={true} className={inter.className}>
                     {children}
                 </body>
               </html>
-              </ClerkProvider>
+              {/* </ClerkProvider> */}
     </NextIntlProvider>
   );
 }

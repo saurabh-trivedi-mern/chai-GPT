@@ -1,4 +1,4 @@
-import { auth } from "@clerk/nextjs/server";
+// import { auth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 
 
@@ -22,13 +22,13 @@ export  async function POST(
     req : Request     
     ){
         try{
-          const {userId} = auth();
+          // const {userId} = auth();
           const body = await req.json()
           const {messages} = body;
 
-          if(!userId){
-            return new NextResponse("OpenAI API Key is not configured")
-          }
+          // if(!userId){
+          //   return new NextResponse("OpenAI API Key is not configured")
+          // }
 
           if(!messages){
             return new NextResponse("Messages are required", {status : 400});

@@ -1,5 +1,5 @@
 
-import { auth } from "@clerk/nextjs";
+// import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
 
@@ -7,16 +7,16 @@ export  async function POST(
     req : Request     
     ){
         try{
-          const {userId} = auth();
+          // const {userId} = auth();
           const body = await req.json()
 
           if (!body.modelUrl) {
             return new NextResponse("Missing 'model url' field.");
           }
 
-          if(!userId){
-            return new NextResponse("OpenAI API Key is not configured")
-          }
+          // if(!userId){
+          //   return new NextResponse("OpenAI API Key is not configured")
+          // }
 
           if (!body.input) {
             return new NextResponse("Missing 'input' field in the request body");

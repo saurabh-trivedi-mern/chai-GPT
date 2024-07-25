@@ -1,6 +1,7 @@
 import { authMiddleware } from "@clerk/nextjs/server";
  
 import createMiddleware from "next-intl/middleware";
+import { NextRequest } from "next/server";
  
 const intlMiddleware = createMiddleware({
   locales: ['en','fr','it','de','ja','hi','zh','es','pa','ta','te'],
@@ -8,7 +9,7 @@ const intlMiddleware = createMiddleware({
 });
  
 export default authMiddleware({
-  beforeAuth: (req) => {
+  beforeAuth: (req: NextRequest) => {
     // Execute next-intl middleware before Clerk's auth middleware
     return intlMiddleware(req);
   },

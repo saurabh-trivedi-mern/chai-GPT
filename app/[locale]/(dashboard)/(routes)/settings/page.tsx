@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { UserButton } from "@clerk/nextjs";
+// import { UserButton } from "@clerk/nextjs";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
@@ -84,10 +84,10 @@ const LandingPage = () => {
           </p>
         </div>
           <div className="px-4 md:px-20 lg:px-32">
-            <div className="flex flex-row gap-4 mb-4 p-2 bg-[#77B0AA] rounded-lg items-center justify-center shadow-md shadow-zinc-600 hover:shadow-zinc-700">
+            {/* <div className="flex flex-row gap-4 mb-4 p-2 bg-[#77B0AA] rounded-lg items-center justify-center shadow-md shadow-zinc-600 hover:shadow-zinc-700">
               <h1 className="text-2xl font-bold text-center ">Manage Your Account : </h1>
               <div className="p-1"><UserButton afterSignOutUrl="/" /></div>
-            </div>
+            </div> */}
             <div className="flex flex-col items-center p-10 gap-3  bg-gradient-to-b from-[#77B0AA] to-[#135D66] rounded-lg shadow-lg shadow-zinc-700 hover:shadow-zinc-800 transition">
                 <h1 className="text-2xl font-bold text-center">Choose Your Language</h1>
                 {routes.map((route)=>(
