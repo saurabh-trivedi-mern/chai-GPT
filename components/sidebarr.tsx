@@ -1,13 +1,14 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { ApertureIcon, Bot, Camera, FileJson, Home, Music, Music2Icon, Settings, } from "lucide-react";
+import { ApertureIcon, Bot, Camera, FileJson, Home, Music2Icon, Settings, UserRoundIcon, } from "lucide-react";
 
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {useTranslations} from 'next-intl';
+import { Avatar } from "@radix-ui/react-avatar";
 
 const montserrat = Montserrat({weight:"600", subsets:["latin"]});
 
@@ -73,6 +74,13 @@ const Sidebarr = () => {
             color : "text-black",
             key : 7,
         },
+        {
+            label : <p>Creator</p>,
+            icon : UserRoundIcon,
+            href : "/creator",
+            color : "text-black",
+            key : 7,
+        },
     ];
     
     return ( 
@@ -87,11 +95,11 @@ const Sidebarr = () => {
                             src="/logo-chai.png"
                             />
                         </div>
-                        <h1 className={cn("text-xl font-bold pt-2 mr-4 items-center text-center", montserrat.className)}>
+                        <h1 className={cn("text-xl font-bold pt-2 mr-6 items-center text-center", montserrat.className)}>
                             Chai-GPT
                         </h1>
                     </Link>
-                    <div className="space-y-7 w-fit md:space-y-2 flex items-center justify-center gap-20">
+                    <div className="space-y-7 w-fit md:space-y-2 flex items-center justify-center gap-16">
                         {routes.map((route)=>(
                             <Link
                             href={route.href}

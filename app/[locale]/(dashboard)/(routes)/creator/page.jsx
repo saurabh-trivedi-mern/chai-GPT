@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './creator.module.css'
 // import ThemeToggle from '../../components/themeToggle/ThemeToggle'
 import Image from "next/image"
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -32,10 +33,10 @@ const About = () => {
           </h3>
           <br />
           <div className={styles.socials}>  
-            <Image className={styles.social} src="/facebook.png" alt='facebook' width={24} height={24}/>
-            <Image className={styles.social} src="/instagram.png" alt='instagram' width={24} height={24}/>
-            <Image className={styles.social} src="/youtube.png" alt='youtube' width={24} height={24}/>
-            <Image className={styles.social} src="/tiktok.png" alt='tiktok' width={24} height={24}/>
+            <Link href="https://www.linkedin.com/in/saurabh-trivedi-mern/" target='_blank'><Image className={styles.social} src="/linkedin.png" alt='linkedin' width={24} height={24}/></Link>
+            <Link href="https://github.com/saurabh-trivedi-mern?tab=repositories" target='_blank'><Image className={styles.social} src="/github.png" alt='github' width={26} height={26}/></Link>
+            <Link href="https://leetcode.com/u/saurabh-trivedi/" target='_blank'><Image className={styles.social} src="/leetcode.png" alt='leetcode' width={36} height={24}/></Link> 
+            <Link href="https://www.instagram.com/saurabh.jkt/" target='_blank'><Image className={styles.social} src="/instagram.png" alt='instagram' width={24} height={24}/></Link>
           </div>
         </div>
         <div>
