@@ -1,6 +1,6 @@
 // import { error } from "console";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 // import { any } from "zod";
 
 interface LoaderProps{

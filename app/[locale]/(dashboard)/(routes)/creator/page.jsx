@@ -13,10 +13,10 @@ const About = () => {
       <div className={styles.wrapper}>
         <div className={styles.floating}></div>
         <div className={styles.imgBox}>
-           <Image className={styles.profile} src={"/profile3.png"} fill />
+           <Image className={styles.profile} src={"/profile3.png"} fill  alt="image" />
         </div>
         <div className={styles.textBox}>
-          <h1>I'm Saurabh Trivedi.</h1>
+          <h1>I&apos;m Saurabh Trivedi.</h1>
           <h2>A Full Stack Web Developer</h2>
           <br />
           <h3>
