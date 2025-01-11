@@ -91,10 +91,9 @@ const LandingPage = () => {
             <div className="flex flex-col items-center p-10 gap-3  bg-gradient-to-b from-[#77B0AA] to-[#135D66] rounded-lg shadow-lg shadow-zinc-700 hover:shadow-zinc-800 transition">
                 <h1 className="text-2xl font-bold text-center">Choose Your Language</h1>
                 {routes.map((route)=>(
-                  <button  onClick={router.refresh}>
+                  <button  onClick={router.refresh} key={route.key}>
                     <Link
                     href={route.href}
-                    key={route.key}
                     className={cn("text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:shadow-md hover:shadow-zinc-700 hover:bg-white/30 rounded-lg transition",
                     pathname.includes(route.href) ? "text-white bg-white/20 shadow-md shadow-zinc-900" : "text-white")}
                     >
